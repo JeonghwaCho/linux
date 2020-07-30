@@ -21,7 +21,8 @@
 	backlight: backlight {
 		compatible = "pwm-backlight";
 		power-supply = <&vcc_bl>;
-		pwms = <&pwm1 0 25000 0>;
+		/* 25kHz */
+		pwms = <&pwm1 0 40000 0>;
 	};
 
 	gpio-keys {
